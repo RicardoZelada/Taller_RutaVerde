@@ -1,8 +1,30 @@
 
 .logo{
-    width: 200px;
-    height: 50px;
+width: 200px;
+height: 50px;
 }
 .link{
 text-decoration: none;
+}
+
+.bg-zona{
+background-color: #36623E;
+}
+
+.status{
+font-size: 18px;
+}
+.status:hover{
+color: #A7C957;
+text-decoration: none;
+}
+
+.column{
+    padding: 0;
+}
+
+.font{
+    font-family: lobster;
+    font-size: 40px;
+    text-align: justify;
 }
