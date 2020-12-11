@@ -1,26 +1,25 @@
 
+
 .logo{
-width: 200px;
+width: 180px;
 height: 50px;
 }
-.link{
-text-decoration: none;
+
+.gallery{
+    margin-top: 113px;;
+}
+
+.nav-header {
+font-size: 18px;
+font-weight: bolder;
+}
+
+#navSupportedContent .nav-header .nav-item a {
+    color: red;
 }
 
 .bg-zona{
-background-color: #36623E;
-}
-
-.status{
-font-size: 18px;
-}
-.status:hover{
-color: #A7C957;
-text-decoration: none;
-}
-
-.column{
-    padding: 0;
+    background-color: #36623E;
 }
 
 .font{

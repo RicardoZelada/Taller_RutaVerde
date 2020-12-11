@@ -15,53 +15,68 @@
   <body>
 
 <!-- Inicio de Header Zona Turistica-->    
-    <div class="bg-zona text-white p-2 text-center"><span>Politicas Covid-19, ingresa Aqui</span></div>
-    <header class="shadow mb-5 bg-white rounded">
+<header class="fixed-top">
+  <div class="bg-zona text-white p-1 text-center"><span>Politicas Covid-19, ingresa Aqui</span></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">    
       <div class="container-fluid">
-        <div class="row row-cols-6">
-          <div class="col-sm-6">
-            <a href="#" class="pl-5"><img class="img-fluid logo mt-2" src="Img/Logo_Ruta_Verde_2.png" alt="Logo"></a>
-          </div>
-          <div class="col-md-1 pt-3">
-            <a class="float-right text-body status" href="#">Inicio</a>
-          </div>
-          <div class="column col-md-1 pt-3">
-            <a class="float-right text-body status" href="Experiencias.html">Experiencias</a>
-          </div>
-          <div class="col-md-1 pt-3">
-            <a class="float-right text-body status" href="Zona_Turistica.html">Turismo</a>
-          </div>
-          <div class="col-md-1 pt-3">
-            <a class="float-right text-body status" href="Quienes_Somos.html">Nosotros</a>
-          </div>
-          <div class="col-md-1 pt-3">
-            <a class="float-right text-body status" href="Contacto.html">Contacto</a>
-          </div>
-        </div>
+            <a class="navbar-brand" href="Inicio.html"><img class="logo" src="Img/Logo_Ruta_Verde_2.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </header>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav-header navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experiencias</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-dark" href="Experiencias.html">Trekking</a></li>
+              <li><a class="dropdown-item text-dark" href="Experiencias.html">Caminatas</a></li>
+              <li><a class="dropdown-item text-dark" href="Experiencias.html">Team Building</a></li>
+              <li><a class="dropdown-item text-dark" href="Experiencias.html">Fogatas y Karaoke</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-dark" href="Zona_Turistica.html">Turismo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="Quienes_Somos.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+    
  <!-- Fin de Header Zona Turistica-->   
 
 <!-- Banner de imagenes Zona Turistica-->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza1.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza2.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza3.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza4.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza5.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza6.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./Img/Naturaleza7.jpg)"></div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+<section class="gallery">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./Img/Naturaleza7.jpg)"></div>
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section> 
 <!-- Fin Banner de imagenes Zona Turistica-->
 
 
 <section class="container-fluid justify-content-center p-4 mt-5">
-  <div class="card mb-3 mt-4">
-    <div class="row g-0">
+  <div class="card">
+    <div class="row">
       <div class="col-md-6">
         <img class="img-fluid" src="Img/Naturaleza5.jpg"  alt="foto">
       </div>
@@ -110,6 +125,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="Js/swiper.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
     <script src="Js/Zona_Turistica.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
