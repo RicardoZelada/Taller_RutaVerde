@@ -4,6 +4,10 @@
 width: 180px;
 height: 50px;
 }
+.logoForm{
+    width: 250px;
+    height: 130px;
+}
 
 .gallery{
     margin-top: 113px;;
@@ -14,8 +18,8 @@ font-size: 18px;
 font-weight: bolder;
 }
 
-#navSupportedContent .nav-header .nav-item a {
-    color: red;
+#navbarSupportedContent .nav-header .nav-item a {
+    color: #A7C957;
 }
 
 .bg-zona{
@@ -27,3 +31,28 @@ font-weight: bolder;
     font-size: 40px;
     text-align: justify;
 }
+
+.cont-turismo{
+    width: 100%;
+}
+
+.img-fluid{
+    height: 350px;
+    width: 100%;
+}
+
+.img-thumbnail{
+    height: 650px;
+    width: 100%;
+    border: none;
+}
+
+.card{
+    border: none;
+}
+
+.card-img-overlay{
+    font-family: lobster;
+    padding: 20px;
+}
+
