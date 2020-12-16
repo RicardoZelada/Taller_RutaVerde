@@ -1,4 +1,11 @@
+:root{
+    --colorsecundario:#A7C957;
+    --colorprimario:#36623E;
+}
 
+html {
+    scroll-behavior: smooth;
+  }
 
 .logo{
 width: 180px;
@@ -19,21 +26,42 @@ font-weight: bolder;
 }
 
 #navbarSupportedContent .nav-header .nav-item a {
-    color: #A7C957;
+    color: var(--colorsecundario);
 }
 
 .bg-zona{
-    background-color: #36623E;
+    background-color: var(--colorprimario);
+}
+
+.bg-form{
+    background-color: var(--colorsecundario);
 }
 
 .font{
     font-family: lobster;
     font-size: 40px;
     text-align: justify;
+    color: var(--colorsecundario);
+}
+.font_1{
+    font-family: lobster;
+    font-size: 30px;
+    text-align: justify;
+    color:#ffffff;
+}
+.font_2{
+    font-family: lobster;
+    font-size: 30px;
+    color: var(--colorsecundario);
 }
 
 .cont-turismo{
     width: 100%;
+}
+
+.card-body{
+    font-family: roboto;
+    font-size: 16px;
 }
 
 .img-fluid{
@@ -46,13 +74,18 @@ font-weight: bolder;
     width: 100%;
     border: none;
 }
+.img-inicio{
+    width: 100%;
+    height: auto;
+    border: none;
+}
 .img-footer{
     width: 300px;
     height: 160px;
 }
 .img-sernatur{
     margin-top: 10px;
-    width: 150px;
+    width: 110px;
     height: 110px;
 }
 .img-distincion{
@@ -76,6 +109,98 @@ font-weight: bolder;
     font-family: roboto;
     font-size: 18px;
 }
+#carouselExampleIndicators{
+    margin-top: 113px;
+}
+
+#content-Jumbo{
+    background-color:var(--colorsecundario);
+}
+
+.btn{
+    width: 200px;
+    background-color: var(--colorsecundario);
+    color: #ffffff;
+    font-family: roboto;
+    border-radius: 50px;
+}
+.btn:hover{
+    background-color: white;
+    border: 1px solid var(--colorsecundario);
+}
+.btn_1{
+    width: 200px;
+    background-color: #ffffff;
+    /*color: var(--colorsecundario);*/
+    font-family: roboto;
+    border-radius: 50px;
+}
+.input_call{
+    width: 300px;
+    border-radius: 50px;
+}
+.div-entorno{
+    background-color: var(--colorsecundario);
+}
+
+.seccion {
+    min-height: calc(100vh - 200px);
+    border-bottom: 1px solid white;
+    background-color: var(--colorsecundario);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+  
+  .seccion::before {
+    background-color: rgba(32, 136, 79, 0.24);
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .text-banner{
+      z-index: 1;
+      color: #ffffff;
+      font-family: lobster;
+      font-size: 40px;
+      text-align: left;
+      margin-left: 100px;
+      position: relative;
+  }
+
+  .contbanner{
+      position: relative;
+  }
+  .divContent{
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-110%,-90%);
+    font-family: lobster;
+    text-align: left;
+    font-size: 40px;
+    color: white;
+  }
+
+  .tittle-cards{
+      width: 255px;
+      background-color: var(--colorprimario);
+      text-align: center;
+      opacity: 0.5;
+      position: relative;
+      bottom: 70px;
+  }
+  .tittle-cards p{
+      z-index: 1;
+  }
 
 @media(max-width:400px){
 .bg-danger{

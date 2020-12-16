@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="Css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/Carrusel_ZT.css">
     <link rel="stylesheet" href="Css/Style.css">
+
+    <title>Ruta Verde Adventure - Outdoor</title>
   </head>
 
 
   <body>
  <!-- Inicio de Header Contacto-->    
 <header class="fixed-top">
-  <div class="bg-zona text-white p-1 text-center"><span>Politicas Covid-19, ingresa Aqui</span></div>
+  <div class="bg-zona text-white p-1 text-center"><span>Politicas Covid-19, ingresa Aqui</span>
+  </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">    
       <div class="container-fluid">
-            <a class="navbar-brand" href="Inicio.html"><img class="logo wow fadeInDown" src="Img/Logo_Ruta_Verde_2.png" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img class="logo wow fadeInDown" src="Img/Logo_Ruta_Verde_2.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
         aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,6 +52,8 @@
           <li class="nav-item status">
             <a class="nav-link" href="Contacto.html">Contacto</a>
           </li>
+          <li class="nav-item">
+          </li>
         </ul>
       </div>
     </nav>
@@ -73,21 +78,19 @@
 <!-- Fin Banner de imagenes Contacto-->
 
 
-
-
 <!-- Formulario de Contacto-->
 <section class="container-fluid mt-5 p-4">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="card mt-4 border border-secondary">
-              <div class="card-header bg-zona p-3 text-white">
-                  <h3 class="font text-center">Envianos tu Informacion</h3>
+              <div class="card-header bg-form p-3">
+                  <h3 class="text-white font text-center">Envianos tu Informacion</h3>
               </div>
               <div class="card-body">
-                  <div id="divErrores">
+                <nav id="navErrores">
 
-                  </div>
+                </nav>
                   <div class="row">
                       <div class="form-group col-12">
                         <label for="inputNombre" class="form-label">Nombre</label>
@@ -97,22 +100,27 @@
                         <label for="inputTelefono" class="form-label">Telefono</label>
                         <input type="text" class="form-control" id="inputTelefono" placeholder="+569 12345678">
                       </div>
-                      <div class="form-group pt-4">
-                        <label for="inputCheck" class="form-label ml-3">Empresa</label>
-                        <input type="checkbox" checked id="inputCheck"/>
-                      </div>
-                      <div class="form-group pt-4">
-                        <label for="inputCheck" class="form-label ml-3">Particular</label>
-                        <input type="checkbox" checked id="inputCheck"/>
-                      </div>
+                        <div class="form-check mt-4 ml-3">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="inputCheck_1 gridRadios1" value="option1">
+                          <label class="form-check-label" for="gridRadios1">
+                            Empresa
+                          </label>
+                        </div>
+                        <div class="form-check mt-4 ml-3">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="inputCheck_2 gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Particular
+                          </label>
+                        </div>
+                    
                       <div class="form-group col-12">
-                          <label for="selectPago">Experiencias</label>
-                          <select name="select" id="selectExperiencias" class="form-control">
-                              <option value="#">Seleccione una Experiencias</option>
-                              <option value="1">Trekking por La Campana</option>
-                              <option value="2">Caminatas</option>
-                              <option value="1">Team Building</option>
-                              <option value="2">Fogatas y Karaoke</option>
+                        <label for="selectPago">Experiencias</label>
+                          <select class="custom-select mr-sm-2 selectExperiencias" id="inlineFormCustomSelect">
+                            <option value="#">Seleccione una opcion...</option>
+                            <option value="1">Trekking por La Campana</option>
+                            <option value="2">Caminatas</option>
+                            <option value="3">Team Building</option>
+                            <option value="4">Fogatas y Karaoke</option>
                           </select>
                       </div>
                       <div class="form-group col-12">
@@ -122,12 +130,14 @@
                       <div class="form-group col-12">
                         <label for="inputArea" class="form-label">Descripcion</label>
                         <input type="text" class="form-control" id="inputArea" placeholder="mensaje">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                          *Opcional
+                        </small>
                       </div>
-            
                   </div> 
               </div>
               <div class="card-footer">
-                  <button class="btn btn-success float-right bg-zona"  type="button" id="btnAgregar">Enviar</button>
+                  <button type="button" class="btn float-right" id="btnAgregar">ENVIAR</button>
               </div>
           </div>
       </div>
@@ -180,6 +190,68 @@
 </section>
 <!-- Fin Seccion Ubicacion de Contacto-->
 
+<!-- Inicio Footer Contacto-->
+<footer>
+  <div class="container-fluid">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid justify-content-center">
+              <span class="navbar-text text-dark font">Certificaciones</span>
+            </div>
+          </nav>
+          <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img class="img-sernatur" src="Img/Sernatur_Logo.png" alt="Imagen">
+                </div>  
+                <div class="col-lg-6 col-md-6 col-sm-12 p-3 text-center">
+                  <img class="img-distincion" src="Img/Sello_Turismo_Sustentable.png" alt="imagen">
+                </div>
+            </div>
+          </div>
+          </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="container mt-4">
+                <div class="row row-cols-2">
+                  <nav class="col-7 text-center" >
+                    <p class="mt-2 float-right font-footer">Siguenos en: </p>
+                  </nav>
+                  <nav class="col-5 text-left">
+                    <a href="https://es-la.facebook.com/rutaverdeoutdoor/"><img class="icon-class p-1 mt-1" src="Img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=es-la"><img class="icon-class mt-1" src="Img/instagram.png" alt="instagram"></a>
+                  </nav>
+                </div>
+                <div class="row row-cols-2">
+                  <nav class="col-5 text-right" >
+                    <img class="icon-class" src="Img/llamada.png" alt="contacto">
+                  </nav>
+                  <nav class="col-7 text-center">
+                    <p class="font-footer">(+569) 91686165 - 96631042</p>
+                  </nav>
+                </div>
+                <div class="container-fluid text-center">
+                  <img class="img-footer p-4" src="Img/transbank.png" alt="Imagen">
+                </div>
+              </div>
+            </div> 
+      </div>  
+      </div>
+    </div>
+  </div>
+  <div class="bg-zona text-white">
+    <div class="row justify-content-between">
+      <div class="col-lg-4">
+        <p class="text-center">Desarrollado por RDB SD</p>
+      </div>
+      <div class="col-lg-5">
+        <p class="text-center">© 2020 Ruta Verde Experiencia Outdoor, Inc.</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <!-- Fin Footer Contacto-->
 
 
 
@@ -193,6 +265,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="Js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="Js/wow.js"></script>
     <script src="Js/bootstrap.bundle.min.js"></script>
     <script src="Js/Contacto.js"></script>
